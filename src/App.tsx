@@ -4,6 +4,8 @@ import { uuid } from 'uuidv4'
 
 import { api } from './services/api';
 
+import './styles.css';
+
 interface IData {
   id: string;
   name: string;
@@ -46,10 +48,10 @@ const App: React.FC = () => {
   )
 
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className="_container">
+      <h1 className="_title">TODO</h1>
 
-      <ul>
+      <ul className="_list">
         {data.map(frut => (
           <li key={frut.id}>
             {frut.name} | {convertoToCurrency(frut.price)}
@@ -62,7 +64,7 @@ const App: React.FC = () => {
           <p>Aguade, carregando....</p>
         </div>
       ) : (
-        <div>
+        <div className="_form">
           <input type="text"
             onChange={e => setFruta(e.target.value)}
             placeholder="Qual fruta"

@@ -6,7 +6,8 @@
       "price": 1000
     },
     {
-      "name": "",
+      "name": "Uva",
+      "price": 6,
       "id": "p-7XHyz"
     },
     {
@@ -68,6 +69,11 @@
       "name": "Maçã",
       "price": 6,
       "id": "WnFBk1E"
+    },
+    {
+      "name": "morango",
+      "price": 12,
+      "id": "Ka-wTA8"
     }
   ],
   "datacontent": [
