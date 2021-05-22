@@ -44,7 +44,7 @@ const App: React.FC = () => {
       }).then(
         response => alert('Tudo certo')
       ).catch(e => alert('error')).finally(() => { setIsLoad(false) })
-    }, [uuid, fruta, frutaValue]
+    }, [fruta, frutaValue]
   )
 
   return (
